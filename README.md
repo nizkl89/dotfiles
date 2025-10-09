@@ -1,24 +1,24 @@
 # macOS Dotfiles
 
-Welcome to my macOS dotfiles repository! This collection represents my personalized setup for a clean, minimal, and efficient macOS environment tailored to streamline my workflow.
+Welcome to my macOS dotfiles repository! This is a curated collection of configurations for a clean, minimal, and efficient macOS environment tailored to my workflow.
 
 ## Overview
 
-These dotfiles are designed to replicate the familiar and productive workflow I use on my Arch Linux setup, with a focus on simplicity and functionality. The configurations primarily enhance **Tmux** and **Aerospace**, providing a lightweight yet powerful setup for developers and power users.
+These dotfiles bring the streamlined, productive setup I enjoy on Arch Linux to macOS, focusing on simplicity and functionality. They primarily enhance **Tmux** and **Aerospace**, delivering a lightweight yet powerful experience for developers and power users.
 
-No fluff, just the essentials to get things done faster.
+This is a personal backup of my custom macOS setup, but feel free to explore or adapt it for your own use.
 
 ## Features
 
-- **Minimalistic Design**: Optimized for speed and simplicity, avoiding unnecessary complexity.
+- **Minimalistic Design**: Prioritizes speed and simplicity, cutting out unnecessary complexity.
 - **Tmux Configuration**: Customized for efficient terminal multiplexing and session management.
-- **Aerospace Integration**: Mimics the tiling window management workflow from Arch Linux for a seamless experience.
-- **macOS-Specific Tweaks**: Fine-tuned settings to enhance productivity on macOS.
+- **Aerospace Integration**: Replicates the tiling window management workflow from Arch Linux.
+- **macOS-Specific Tweaks**: Optimized settings to boost productivity.
+- **Terminal Tools**: Includes configurations for tools like `fd`, `fzf`, `zoxide`, and `eza`.
+- **Tmux Plugins**: Uses TPM for plugin management, with the Catppuccin theme for a clean aesthetic.
 
-## Usage
+## Notes
 
-Feel free to explore, test, or adapt these dotfiles for your own setup. They’re crafted to be straightforward and easy to integrate.
+This setup is tailored to my preferences and requires manual installation of tools and dependencies (e.g., Tmux Plugin Manager, Catppuccin theme, and terminal tools). While it’s primarily for my personal use, you’re welcome to explore and adapt it to your needs.
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/dotfiles.git ~/.dotfiles
+No installation guide is provided—check the dotfiles for details on configurations.
