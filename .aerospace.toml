@@ -58,7 +58,7 @@ default-root-container-orientation = 'auto'
 exec-on-workspace-change = [
   '/bin/bash',
   '-c',
-  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+  'sketchybar --trigger aerospace_workspace_change'
 ]
 
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
@@ -94,6 +94,9 @@ inner.vertical =   8
 4 = [ 'secondary', 'main' ]
 5 = [ 'secondary', 'main' ]
 6 = [ 'secondary', 'main' ]
+7 = 'main'
+8 = 'main'
+9 = 'main'
 
 # Float CleanShot X windows by default
 # See: https://nikitabobko.github.io/AeroSpace/guide#on-window-detected-callback
