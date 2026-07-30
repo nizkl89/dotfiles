@@ -1,18 +1,24 @@
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
+# >>> conda initialize (lazy) >>>
+__conda_init() {
+  __conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+  if [ $? -eq 0 ]; then
     eval "$__conda_setup"
-else
+  else
     if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/anaconda3/etc/profile.d/conda.sh"
+      . "/opt/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/opt/anaconda3/bin:$PATH"
+      export PATH="/opt/anaconda3/bin:$PATH"
     fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+  fi
+  unset __conda_setup
+}
+conda() {
+  unset -f conda
+  __conda_init
+  conda "$@"
+}
+# <<< conda initialize (lazy) <<<
 
 # Editor source
 export EDITOR="nvim"
@@ -170,13 +176,9 @@ eval "$(zoxide init zsh)"
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/kingsleylam/.docker/completions $fpath)
 autoload -Uz compinit
-compinit
+compinit -C
 # End of Docker CLI completions
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/kingsleylam/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kingsleylam/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/kingsleylam/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kingsleylam/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="$HOME/.local/share/mise/shims:$PATH"
 export PATH="$HOME/.local/share/mise/installs/java/26.0.0/bin:$PATH"
