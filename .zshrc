@@ -157,3 +157,26 @@ parse_git_branch() {
 # Prompt with STarship
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+. "$HOME/.local/bin/env"
+
+# opencode
+export PATH=/Users/kingsleylam/.opencode/bin:$PATH
+
+# FLutter path
+export PATH=/Users/kingsleylam/Development/flutter/bin:$PATH
+
+eval "$(zoxide init zsh)"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/kingsleylam/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kingsleylam/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kingsleylam/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kingsleylam/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kingsleylam/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="$HOME/.local/share/mise/shims:$PATH"
+export PATH="$HOME/.local/share/mise/installs/java/26.0.0/bin:$PATH"

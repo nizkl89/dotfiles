@@ -13,6 +13,8 @@ This is a personal backup of my custom macOS setup, but feel free to explore or 
 - **Minimalistic Design**: Prioritizes speed and simplicity, cutting out unnecessary complexity.
 - **Tmux Configuration**: Customized for efficient terminal multiplexing and session management.
 - **Aerospace Integration**: Replicates the tiling window management workflow from Arch Linux.
+- **SketchyBar**: Custom macOS status bar wired to AeroSpace workspace events. Automatically highlights the focused workspace and recovers after sleep/wake cycles.
+- **Herdr**: AI-agent-aware terminal multiplexer with workspace/tab/pane management. Configured with a `ctrl+p` prefix key and workspace navigation.
 - **macOS-Specific Tweaks**: Optimized settings to boost productivity.
 - **Terminal Tools**: Includes configurations for tools like `fd`, `fzf`, `zoxide`, and `eza`.
 - **Tmux Plugins**: Uses TPM for plugin management, with the Catppuccin theme for a clean aesthetic.

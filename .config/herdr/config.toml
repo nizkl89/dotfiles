@@ -1,0 +1,18 @@
+# herdr configuration
+# Place this file at ~/.config/herdr/config.toml
+
+[theme]
+# name = "catppuccin"
+
+[keys]
+prefix = "ctrl+p"
+
+previous_workspace = "prefix+["
+next_workspace = "prefix+]"
+
+[ui]
+# sidebar_width = 26
+# sidebar_start_collapsed = false
+
+[experimental]
+pane_history = false

@@ -46,8 +46,8 @@ default-root-container-orientation = 'auto'
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 # Fallback value (if you omit the key): on-focused-monitor-changed = []
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-on-focus-changed = "move-mouse window-lazy-center"
+# on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+# on-focus-changed = "move-mouse window-lazy-center"
 
 # exec-on-workspace-change callback allows to run arbitrary process when focused
 # workspace changes. It may be useful for integrating with bars.
@@ -91,6 +91,9 @@ inner.vertical =   8
 1 = [ 'secondary', 'main' ]
 2 = [ 'secondary', 'main' ]
 3 = [ 'secondary', 'main' ]
+4 = [ 'secondary', 'main' ]
+5 = [ 'secondary', 'main' ]
+6 = [ 'secondary', 'main' ]
 
 # Float CleanShot X windows by default
 # See: https://nikitabobko.github.io/AeroSpace/guide#on-window-detected-callback
@@ -148,7 +151,6 @@ preset = 'qwerty'
     alt-c = 'exec-and-forget open -a maccy'
     alt-g = 'exec-and-forget open -a "WhatsApp.app"'
     alt-f = 'exec-and-forget open -a Finder'
-    
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     # switch between accordion and tiles mode
     alt-comma = 'layout accordion horizontal vertical'
@@ -178,11 +180,10 @@ preset = 'qwerty'
     alt-3 = 'workspace 3'
     alt-4 = 'workspace 4'
     alt-5 = 'workspace 5'
-
-#    alt-6 = 'workspace 6'
-#    alt-7 = 'workspace 7'
-#    alt-8 = 'workspace 8'
-
+    alt-6 = 'workspace 6'
+    alt-7 = 'workspace 7'
+    alt-8 = 'workspace 8'
+    alt-9 = 'workspace 9'
     # Move windows/nodes to other workspaces
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
@@ -190,12 +191,12 @@ preset = 'qwerty'
     alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
     alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
     alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5']
+    alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
+    alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
+    alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
+    alt-shift-9 = ['move-node-to-workspace 9', 'workspace 9']
 
-#    alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
-#    alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
-#    alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
-
-# Switch focus between the two last used workspaces
+# Switch focus between the two last used workspacesa
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
  alt-tab = 'workspace-back-and-forth'
 

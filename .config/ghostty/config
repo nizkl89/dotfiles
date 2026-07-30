@@ -50,3 +50,4 @@
 
 theme = TokyoNight Storm
 font-size = 14
+shell-integration-features = ssh-env,ssh-terminfo,sudo,cursor
