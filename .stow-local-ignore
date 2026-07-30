@@ -16,7 +16,6 @@ _darcs
 .gitmodules
 
 .DS_Store
-.config/.DS_store
 
 .+~          # emacs backup files
 #.*#       # emacs autosave files
